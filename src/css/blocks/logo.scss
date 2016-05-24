@@ -1,0 +1,18 @@
+.logo {
+  text-decoration: none;
+  font-size: 21px;
+  font-family: #{$primary-font-family};
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+
+  span {
+    color: $primary-color;
+  }
+
+  &--big {
+    font-size: 62px;
+  }
+}

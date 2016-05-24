@@ -1,0 +1,33 @@
+.navbar {
+
+  margin-bottom: 235px;
+  padding-top: 20px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__left {
+    float: left;
+    width: 50%;
+  }
+
+  &__logo {
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__tagline {
+    padding-left: 20px;
+    border-left: 1px solid $primary-color;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  &__right {
+    margin-top: -20px;
+    float: right;
+    width: 50%;
+  }
+}

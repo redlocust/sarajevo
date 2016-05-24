@@ -1,45 +1,17 @@
-.features {
-  padding-top: 75px;
-  background-color: #efefef;
-  min-height: 435px;
+.works {
+  background-color: #fff;
+  min-height: 760px;
 
   &__inner {
     @include container;
   }
 
-  &__item {
-    display: inline-block;
-    vertical-align: top;
-    width: 300px;
-    text-align: left;
-    padding-left: 50px;
-    position: relative;
 
-    &:nth-child(3n + 2) {
-      margin: 0 33px;
-    }
-
-  }
-
-  &__item-title {
-    font: 600 17px/1.2 $second-font-family;
+  &__description {
+    font: 300 14px/18px $primary-font-family;
     color: #062033;
-    margin: 18px 0;
-  }
-
-  &__item-text {
-    color: #062033;
-    font: 400 11px/18px $second-font-family;
-  }
-
-  &__icon {
-    position: absolute;
-    content: "";
-    width: 35px;
-    height: 35px;
-    border-radius: 50%;
-    border: solid 1px $primary-color;
-    top: 17px;
-    left: 0;
+    padding: 0 125px;
+    text-align: center;
+    margin-top: -15px;
   }
 }
