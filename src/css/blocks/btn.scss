@@ -1,0 +1,26 @@
+.btn {
+  text-decoration: none;
+  color: #062033;
+  padding: 10px 15px;
+  background: $background-color;
+  font: 700 14px/16px $primary-font-family;
+  border-radius: 8px;
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid $primary-color;
+    color: #062033;
+  }
+
+  &--active {
+    background: $primary-color;
+    color: #fff;
+    border-radius: 8px;
+    border: 1px solid $primary-color;
+
+    &:hover {
+      color: #fff;
+      border: 1px solid $primary-color;
+    }
+  }
+}
