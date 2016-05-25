@@ -1,10 +1,11 @@
 .btn {
   text-decoration: none;
   color: #062033;
-  padding: 10px 15px;
+  padding: 6px 20px;
   background: $background-color;
   font: 700 14px/16px $primary-font-family;
-  border-radius: 8px;
+  border-radius: 5px;
+  margin: 0 3px;
   border: 1px solid transparent;
 
   &:hover {
@@ -15,7 +16,7 @@
   &--active {
     background: $primary-color;
     color: #fff;
-    border-radius: 8px;
+    border-radius: 9px;
     border: 1px solid $primary-color;
 
     &:hover {

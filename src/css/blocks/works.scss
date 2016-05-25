@@ -12,11 +12,84 @@
     color: #062033;
     padding: 0 125px;
     text-align: center;
-    margin-top: -13px;
-    margin-bottom: 70px;
+    margin-top: -15px;
+    margin-bottom: 75px;
   }
 
   &__btn-row {
     text-align: center;
+    margin-bottom: 85px;
+    margin-left: 15px;
   }
+
+  &__images-list {
+    width: 1176px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+  }
+
+  &__image {
+    width: 294px;
+    height: 220px;
+  }
+
+
+  &__image-description {
+    position: absolute;
+    visibility:hidden;
+    background: #fff;
+    width: 0;
+    height: 0;
+    transition: width 500ms , height 500ms;
+  }
+
+  &__image-item {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: 294px;
+    height: 220px;
+
+    a {
+      margin-top: 110px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      font: 700 13px/15px $second-font-family;
+      color: #fff;
+      text-decoration: none;
+
+      span {
+        font: 400 10px/17px $second-font-family;
+      }
+    }
+
+    &:hover .works__image-description {
+      display: block;
+      visibility: visible;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 294px;
+      height: 220px;
+      background: $primary-color;
+      opacity: 0.9;
+      //z-index: 100;
+    }
+  }
+
+  &__image-icon {
+    position: relative;
+    content: "";
+    top: 95px;
+    left: 130px;
+    width: 30px;
+    height: 30px;
+    border: #fff solid 2px;
+    border-radius: 50%;
+  }
+
+
 }
