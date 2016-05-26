@@ -17,4 +17,13 @@
     bottom: -30px;
     left: calc(50% - 229px/2);
   }
+
+  &__description {
+      font: 300 14px/18px $primary-font-family;
+      color: #062033;
+      padding: 0 125px;
+      text-align: center;
+      margin-top: -15px;
+      margin-bottom: 75px;
+  }
 }

@@ -1,19 +1,10 @@
 .works {
   background-color: #fff;
   min-height: 760px;
+  margin-bottom: 100px;
 
   &__inner {
     @include container;
-  }
-
-
-  &__description {
-    font: 300 14px/18px $primary-font-family;
-    color: #062033;
-    padding: 0 125px;
-    text-align: center;
-    margin-top: -15px;
-    margin-bottom: 75px;
   }
 
   &__btn-row {
@@ -37,11 +28,12 @@
 
   &__image-description {
     position: absolute;
-    visibility:hidden;
+    display: block;
     background: #fff;
     width: 0;
     height: 0;
-    transition: width 500ms , height 500ms;
+    opacity: 0;
+    transition: opacity 500ms ease-in;
   }
 
   &__image-item {
@@ -66,8 +58,6 @@
     }
 
     &:hover .works__image-description {
-      display: block;
-      visibility: visible;
       position: absolute;
       content: "";
       top: 0;
@@ -85,8 +75,8 @@
     content: "";
     top: 95px;
     left: 130px;
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     border: #fff solid 2px;
     border-radius: 50%;
   }

@@ -1,0 +1,121 @@
+.team {
+  background-color: #fff;
+  min-height: 660px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__list {
+    font-size: 0;
+  }
+
+  &__image {
+    width: 224px;
+    height: 249px;
+  }
+
+  &__item {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 22px;
+    margin-bottom: 20px;
+
+    &:nth-child(4n + 4) {
+      margin-right: 0;
+    }
+  }
+
+  &__image-description {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 204px;
+    height: 229px;
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+
+  &__image-item {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    width: 224px;
+    height: 249px;
+
+    p {
+      padding: 15px;
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      font: 700 13px/15px $second-font-family;
+      color: #fff;
+      text-decoration: none;
+
+      span {
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 10px;
+        font: 400 10px/17px $second-font-family;
+      }
+    }
+
+    &:hover .team__image-description {
+      //display: block;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 224px;
+      height: 249px;
+      background: $primary-color;
+      opacity: 0.9;
+      //z-index: 100;
+    }
+
+    &:hover .team__name {
+      color: #0eb493;
+      //z-index: 100;
+    }
+
+  }
+
+  &__social-icons {
+    position: absolute;
+    text-align: center;
+    content: "";
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+  }
+
+  &__social-icon {
+    display: inline-block;
+    vertical-align: top;
+    width: 35px;
+    height: 35px;
+    background: #3b58b7;
+    margin-right: 10px;
+    position: relative;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+
+  &__name {
+    text-align: center;
+    font: 700 15px/19px $second-font-family;
+    color: #062033;
+    padding-top: 10px;
+  }
+
+  &__job {
+    text-align: center;
+    opacity: 0.6;
+    font: 400 11px/22px $second-font-family;
+    color: #062033;
+  }
+}

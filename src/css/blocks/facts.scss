@@ -1,0 +1,11 @@
+.facts {
+  padding-top: 75px;
+  background-color: #efefef;
+  background: url(../img/bg-facts.jpg);
+  min-height: 450px;
+
+  &__inner {
+    @include container;
+  }
+
+}
