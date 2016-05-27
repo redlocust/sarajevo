@@ -3,25 +3,30 @@
   padding: 0;
   margin-bottom: 90px;
   color: $primary-color;
-  text-transform: uppercase;text-align: center;
+  text-transform: uppercase;
+  text-align: center;
   font: 700 28px/1.2 $primary-font-family;
   position: relative;
 
-  &::after {
+  &::after, &--white::after {
     position: absolute;
     content: "";
     width: 229px;
     height: 14px;
-    background: transparent url("../img/pic-heart-shape.png") top center no-repeat;
+    background: url("../img/pic-heart-shape.png") top center no-repeat;
     background-size: cover;
     bottom: -30px;
     left: calc(50% - 229px/2);
   }
 
+  &--white::after {
+    background-image: url("../img/pic-heart-shape-white.png");
+  }
+
   &__description {
       font: 300 14px/18px $primary-font-family;
       color: #062033;
-      padding: 0 125px;
+      padding: 0 100px;
       text-align: center;
       margin-top: -15px;
       margin-bottom: 75px;

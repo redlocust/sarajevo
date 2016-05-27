@@ -1,0 +1,10 @@
+.discuss {
+  background-color: #fff;
+  min-height: 575px;
+  padding-top: 75px;
+
+  &__inner {
+    @include container;
+  }
+
+}
