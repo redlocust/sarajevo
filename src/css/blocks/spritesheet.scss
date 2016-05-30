@@ -26,35 +26,47 @@
 .sprite-facebook {
   width: 10px;
   height: 18px;
-  background-position: -5px -35px;
+  background-position: -65px -5px;
 }
 
 .sprite-facebook:hover {
   width: 10px;
   height: 18px;
-  background-position: -25px -35px;
+  background-position: -85px -5px;
 }
 
 .sprite-google {
   width: 18px;
   height: 18px;
-  background-position: -45px -35px;
+  background-position: -105px -5px;
 }
 
 .sprite-google:hover {
   width: 18px;
   height: 18px;
-  background-position: -65px -5px;
+  background-position: -65px -33px;
+}
+
+.sprite-spritesheet {
+  width: 98px;
+  height: 80px;
+  background-position: -133px -5px;
 }
 
 .sprite-twitter {
   width: 20px;
   height: 16px;
-  background-position: -73px -33px;
+  background-position: -5px -95px;
 }
 
 .sprite-twitter:hover {
   width: 20px;
   height: 16px;
-  background-position: -73px -59px;
+  background-position: -35px -95px;
+}
+
+.sprite-zEnvelope {
+  width: 19px;
+  height: 13px;
+  background-position: -65px -95px;
 }

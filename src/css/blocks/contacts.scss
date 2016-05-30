@@ -1,0 +1,106 @@
+.contacts {
+  background-color: #fff;
+  min-height: 575px;
+  padding-top: 75px;
+
+  &__inner {
+    @include container;
+  }
+
+  &__left-column {
+    float: left;
+    width: 240px;
+  }
+
+  &__right-column {
+    float: right;
+    width: 726px;
+    padding-right: 73px;
+    padding-left: 10px;
+  }
+
+  &__title {
+    font-size: 19px;
+    line-height: 27px;
+    font-family: $second-font-family;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 30px;
+    color: $font-color;
+  }
+
+  &__text {
+    font-size: 11px;
+    line-height: 20px;
+    font-family: $second-font-family;
+    font-weight: 400;
+    color: #6a737b;
+    font-style: normal;
+    padding-right: 80px;
+  }
+
+  &__greetings {
+    font-size: 20px;
+    line-height: 20px;
+    font-family: $second-font-family;
+    font-weight: 700;
+    color: $font-color;
+    margin-bottom: 40px;
+  }
+
+  &__form {
+
+  }
+
+  &__form-element {
+
+    margin-right: 15px;
+    color: #5b646e;
+    font-family: $second-font-family;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    border: none;
+    border-bottom: solid 2px #e7e7e7;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+
+    &--small {
+      width: 305px;
+    }
+
+    &--wide {
+      width: 640px;
+    }
+  }
+
+  &__form-send {
+    text-align: right;
+  }
+
+  &__form-submit {
+    position: relative;
+    color: #000;
+    font-size: 13px;
+    line-height: 20px;
+    font-family: $second-font-family;
+    font-weight: 400;
+    background: $background-color;
+    border: none;
+    cursor: pointer;
+    padding-left: 30px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 10px;
+      left: 0;
+      width: 19px;
+      height: 13px;
+      background-image: url(../img/sprite/spritesheet.png);
+      background-repeat: no-repeat;
+      background-position: -65px -95px;
+    }
+
+  }
+}
