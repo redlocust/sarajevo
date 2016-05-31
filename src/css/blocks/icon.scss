@@ -83,12 +83,18 @@
   color: #fff;
   font-size: 18px;
   position: absolute;
+<<<<<<< HEAD
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+=======
+>>>>>>> 5af97834f7c54889eeb2aeaf369ec014eef66ff4
   opacity: 1.0;
   font-weight: normal;
   font-style: normal;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
 
   &--large {
