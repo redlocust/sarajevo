@@ -83,12 +83,6 @@
   color: #fff;
   font-size: 18px;
   position: absolute;
-<<<<<<< HEAD
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-=======
->>>>>>> 5af97834f7c54889eeb2aeaf369ec014eef66ff4
   opacity: 1.0;
   font-weight: normal;
   font-style: normal;
@@ -99,6 +93,15 @@
 
   &--large {
     font-size: 30px;
+  }
+
+  &--contacts {
+    font-size: 23px;
+    color: #cdd2d6;
+
+    &:hover {
+      color: darken(#cdd2d6, 15%)
+    }
   }
 
   &--eye:before {
@@ -132,4 +135,17 @@
   &--trophy:before {
     content: '\e807';
   }
+
+  &--behance:before {
+    content: '\e808';
+  }
+
+  &--dribbble:before {
+    content: '\e809';
+  }
+
+  &--forrst:before {
+    content: '\e80a';
+  }
+
 }

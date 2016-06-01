@@ -14,8 +14,8 @@
 
   &__right-column {
     float: right;
-    width: 726px;
-    padding-right: 73px;
+    width: 730px;
+    padding-right: 70px;
     padding-left: 10px;
   }
 
@@ -36,7 +36,7 @@
     font-weight: 400;
     color: #6a737b;
     font-style: normal;
-    padding-right: 80px;
+    padding-right: 40px;
   }
 
   &__greetings {
@@ -49,7 +49,7 @@
   }
 
   &__form {
-
+    position: relative;
   }
 
   &__form-element {
@@ -64,9 +64,14 @@
     border-bottom: solid 2px #e7e7e7;
     margin-bottom: 25px;
     padding-bottom: 15px;
+    outline: none;
 
     &--small {
-      width: 305px;
+      width: 310px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     &--wide {
@@ -79,28 +84,31 @@
   }
 
   &__form-submit {
-    position: relative;
+    padding-top: 10px;
     color: #000;
     font-size: 13px;
     line-height: 20px;
     font-family: $second-font-family;
-    font-weight: 400;
+    font-weight: 700;
     background: $background-color;
     border: none;
     cursor: pointer;
-    padding-left: 30px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      top: 10px;
-      left: 0;
-      width: 19px;
-      height: 13px;
-      background-image: url(../img/sprite/spritesheet.png);
-      background-repeat: no-repeat;
-      background-position: -65px -95px;
-    }
+  }
 
+  &__social-icons {
+    position: absolute;
+    content: "";
+    width: 40px;
+    top: -45px;
+    right: -70px;
+  }
+
+  &__social-icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 35px;
+    height: 35px;
   }
 }
