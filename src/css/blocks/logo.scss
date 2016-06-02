@@ -15,4 +15,12 @@
   &--big {
     font-size: 62px;
   }
+
+  &--middle {
+    font-size: 30px;
+    margin-top: -15px;
+    margin-bottom: 15px;
+    display: inline-block;
+    vertical-align: top;
+  }
 }
