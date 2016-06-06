@@ -22,13 +22,18 @@
     display: inline-block;
     vertical-align: top;
     padding-top: 20px;
-    font: 100 12px/1.2 #{$primary-font-family};
+    font: 100 14px/1.2 #{$primary-font-family};
     color: #fff;
     text-decoration: none;
-    border-top: 2px solid transparent;
+    border-top: 3px solid transparent;
+    transition: color 0.5s;
+
+    &--active {
+      border-top: 3px solid #4C76FF;
+    }
 
     &:hover {
-      border-top: 2px solid #4C76FF;
+      color: darken(#fff, 20%);
     }
 
   }
