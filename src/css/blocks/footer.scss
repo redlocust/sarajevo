@@ -59,8 +59,8 @@
   }
 
   &__link {
+    @include links(#fff, darken(#fff, 40%), darken(#fff, 20%), darken(#fff, 20%) );
     text-decoration: none;
-    color: #fff;
     font-family: $second-font-family;
     font-weight: 400;
     font-size: 12px;
